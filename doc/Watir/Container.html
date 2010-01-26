@@ -1,0 +1,8970 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8" />
+<title>Module: Watir::Container</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (C)</a> &raquo; 
+    <span class='title'><a href="../Watir.html" title="Watir (module)">Watir</a></span>
+     &raquo; 
+    <span class="title">Container</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Module: Watir::Container 
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+      <dt class="r1">Includes:</dt>
+      <dd class="r1"><a href="XpathSupport.html" title="Watir::XpathSupport (module)">XpathSupport</a></dd>
+      
+    
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/watir-webdriver.rb<span class="defines">,<br />
+  lib/watir-webdriver/container.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+  
+  
+  
+  
+  
+
+  <h2>Class Method Summary</h2>
+
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add-class_method" title="add (class method)">+ (Object) <strong>add</strong>(method, &amp;blk) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+  </ul>
+
+  <h2>Instance Method Summary</h2>
+
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#a-instance_method" title="#a (instance method)">- (Object) <strong>a</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#abbr-instance_method" title="#abbr (instance method)">- (Object) <strong>abbr</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#abbrs-instance_method" title="#abbrs (instance method)">- (Object) <strong>abbrs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#address-instance_method" title="#address (instance method)">- (Object) <strong>address</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#area-instance_method" title="#area (instance method)">- (Object) <strong>area</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#areas-instance_method" title="#areas (instance method)">- (Object) <strong>areas</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#article-instance_method" title="#article (instance method)">- (Object) <strong>article</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#articles-instance_method" title="#articles (instance method)">- (Object) <strong>articles</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#as-instance_method" title="#as (instance method)">- (Object) <strong>as</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#aside-instance_method" title="#aside (instance method)">- (Object) <strong>aside</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#asides-instance_method" title="#asides (instance method)">- (Object) <strong>asides</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#b-instance_method" title="#b (instance method)">- (Object) <strong>b</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#base-instance_method" title="#base (instance method)">- (Object) <strong>base</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#bases-instance_method" title="#bases (instance method)">- (Object) <strong>bases</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#bdo-instance_method" title="#bdo (instance method)">- (Object) <strong>bdo</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#bdos-instance_method" title="#bdos (instance method)">- (Object) <strong>bdos</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#blockquote-instance_method" title="#blockquote (instance method)">- (Object) <strong>blockquote</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#blockquotes-instance_method" title="#blockquotes (instance method)">- (Object) <strong>blockquotes</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#body-instance_method" title="#body (instance method)">- (Object) <strong>body</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#bodys-instance_method" title="#bodys (instance method)">- (Object) <strong>bodys</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#br-instance_method" title="#br (instance method)">- (Object) <strong>br</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#brs-instance_method" title="#brs (instance method)">- (Object) <strong>brs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#bs-instance_method" title="#bs (instance method)">- (Object) <strong>bs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#button-instance_method" title="#button (instance method)">- (Object) <strong>button</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#buttons-instance_method" title="#buttons (instance method)">- (Object) <strong>buttons</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#canvas-instance_method" title="#canvas (instance method)">- (Object) <strong>canvas</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#caption-instance_method" title="#caption (instance method)">- (Object) <strong>caption</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#captions-instance_method" title="#captions (instance method)">- (Object) <strong>captions</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#checkbox-instance_method" title="#checkbox (instance method)">- (Object) <strong>checkbox</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#checkboxes-instance_method" title="#checkboxes (instance method)">- (Object) <strong>checkboxes</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cite-instance_method" title="#cite (instance method)">- (Object) <strong>cite</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cites-instance_method" title="#cites (instance method)">- (Object) <strong>cites</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#code-instance_method" title="#code (instance method)">- (Object) <strong>code</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#codes-instance_method" title="#codes (instance method)">- (Object) <strong>codes</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#col-instance_method" title="#col (instance method)">- (Object) <strong>col</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#colgroup-instance_method" title="#colgroup (instance method)">- (Object) <strong>colgroup</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#colgroups-instance_method" title="#colgroups (instance method)">- (Object) <strong>colgroups</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cols-instance_method" title="#cols (instance method)">- (Object) <strong>cols</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#datalist-instance_method" title="#datalist (instance method)">- (Object) <strong>datalist</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#datalists-instance_method" title="#datalists (instance method)">- (Object) <strong>datalists</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dd-instance_method" title="#dd (instance method)">- (Object) <strong>dd</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dds-instance_method" title="#dds (instance method)">- (Object) <strong>dds</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#del-instance_method" title="#del (instance method)">- (Object) <strong>del</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dels-instance_method" title="#dels (instance method)">- (Object) <strong>dels</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#details-instance_method" title="#details (instance method)">- (Object) <strong>details</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dfn-instance_method" title="#dfn (instance method)">- (Object) <strong>dfn</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dfns-instance_method" title="#dfns (instance method)">- (Object) <strong>dfns</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#div-instance_method" title="#div (instance method)">- (Object) <strong>div</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#divs-instance_method" title="#divs (instance method)">- (Object) <strong>divs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dl-instance_method" title="#dl (instance method)">- (Object) <strong>dl</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dls-instance_method" title="#dls (instance method)">- (Object) <strong>dls</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dt-instance_method" title="#dt (instance method)">- (Object) <strong>dt</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dts-instance_method" title="#dts (instance method)">- (Object) <strong>dts</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#em-instance_method" title="#em (instance method)">- (Object) <strong>em</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#embed-instance_method" title="#embed (instance method)">- (Object) <strong>embed</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#embeds-instance_method" title="#embeds (instance method)">- (Object) <strong>embeds</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ems-instance_method" title="#ems (instance method)">- (Object) <strong>ems</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fieldset-instance_method" title="#fieldset (instance method)">- (Object) <strong>fieldset</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fieldsets-instance_method" title="#fieldsets (instance method)">- (Object) <strong>fieldsets</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#figure-instance_method" title="#figure (instance method)">- (Object) <strong>figure</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#figures-instance_method" title="#figures (instance method)">- (Object) <strong>figures</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#file_field-instance_method" title="#file_field (instance method)">- (Object) <strong>file_field</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#file_fields-instance_method" title="#file_fields (instance method)">- (Object) <strong>file_fields</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#footer-instance_method" title="#footer (instance method)">- (Object) <strong>footer</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#footers-instance_method" title="#footers (instance method)">- (Object) <strong>footers</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#form-instance_method" title="#form (instance method)">- (Object) <strong>form</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#forms-instance_method" title="#forms (instance method)">- (Object) <strong>forms</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h1-instance_method" title="#h1 (instance method)">- (Object) <strong>h1</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h1s-instance_method" title="#h1s (instance method)">- (Object) <strong>h1s</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h2-instance_method" title="#h2 (instance method)">- (Object) <strong>h2</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h2s-instance_method" title="#h2s (instance method)">- (Object) <strong>h2s</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h3-instance_method" title="#h3 (instance method)">- (Object) <strong>h3</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h3s-instance_method" title="#h3s (instance method)">- (Object) <strong>h3s</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h4-instance_method" title="#h4 (instance method)">- (Object) <strong>h4</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h4s-instance_method" title="#h4s (instance method)">- (Object) <strong>h4s</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h5-instance_method" title="#h5 (instance method)">- (Object) <strong>h5</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h5s-instance_method" title="#h5s (instance method)">- (Object) <strong>h5s</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h6-instance_method" title="#h6 (instance method)">- (Object) <strong>h6</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#h6s-instance_method" title="#h6s (instance method)">- (Object) <strong>h6s</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#head-instance_method" title="#head (instance method)">- (Object) <strong>head</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#header-instance_method" title="#header (instance method)">- (Object) <strong>header</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#headers-instance_method" title="#headers (instance method)">- (Object) <strong>headers</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#heads-instance_method" title="#heads (instance method)">- (Object) <strong>heads</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hgroup-instance_method" title="#hgroup (instance method)">- (Object) <strong>hgroup</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hgroups-instance_method" title="#hgroups (instance method)">- (Object) <strong>hgroups</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hidden-instance_method" title="#hidden (instance method)">- (Object) <strong>hidden</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hiddens-instance_method" title="#hiddens (instance method)">- (Object) <strong>hiddens</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hr-instance_method" title="#hr (instance method)">- (Object) <strong>hr</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hrs-instance_method" title="#hrs (instance method)">- (Object) <strong>hrs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#html-instance_method" title="#html (instance method)">- (Object) <strong>html</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#htmls-instance_method" title="#htmls (instance method)">- (Object) <strong>htmls</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#i-instance_method" title="#i (instance method)">- (Object) <strong>i</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#iframe-instance_method" title="#iframe (instance method)">- (Object) <strong>iframe</strong> </a>
+    
+
+    
+      (also: #frame)
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#iframes-instance_method" title="#iframes (instance method)">- (Object) <strong>iframes</strong> </a>
+    
+
+    
+      (also: #frames)
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#image-instance_method" title="#image (instance method)">- (Object) <strong>image</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#images-instance_method" title="#images (instance method)">- (Object) <strong>images</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#input-instance_method" title="#input (instance method)">- (Object) <strong>input</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#inputs-instance_method" title="#inputs (instance method)">- (Object) <strong>inputs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ins-instance_method" title="#ins (instance method)">- (Object) <strong>ins</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#is-instance_method" title="#is (instance method)">- (Object) <strong>is</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#kbd-instance_method" title="#kbd (instance method)">- (Object) <strong>kbd</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#kbds-instance_method" title="#kbds (instance method)">- (Object) <strong>kbds</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#keygen-instance_method" title="#keygen (instance method)">- (Object) <strong>keygen</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#keygens-instance_method" title="#keygens (instance method)">- (Object) <strong>keygens</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#label-instance_method" title="#label (instance method)">- (Object) <strong>label</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#labels-instance_method" title="#labels (instance method)">- (Object) <strong>labels</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#legend-instance_method" title="#legend (instance method)">- (Object) <strong>legend</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#legends-instance_method" title="#legends (instance method)">- (Object) <strong>legends</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#li-instance_method" title="#li (instance method)">- (Object) <strong>li</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#link-instance_method" title="#link (instance method)">- (Object) <strong>link</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#links-instance_method" title="#links (instance method)">- (Object) <strong>links</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lis-instance_method" title="#lis (instance method)">- (Object) <strong>lis</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#map-instance_method" title="#map (instance method)">- (Object) <strong>map</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#maps-instance_method" title="#maps (instance method)">- (Object) <strong>maps</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mark-instance_method" title="#mark (instance method)">- (Object) <strong>mark</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#marks-instance_method" title="#marks (instance method)">- (Object) <strong>marks</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#meta-instance_method" title="#meta (instance method)">- (Object) <strong>meta</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#metas-instance_method" title="#metas (instance method)">- (Object) <strong>metas</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#meter-instance_method" title="#meter (instance method)">- (Object) <strong>meter</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#meters-instance_method" title="#meters (instance method)">- (Object) <strong>meters</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#nav-instance_method" title="#nav (instance method)">- (Object) <strong>nav</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#navs-instance_method" title="#navs (instance method)">- (Object) <strong>navs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#noscript-instance_method" title="#noscript (instance method)">- (Object) <strong>noscript</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#noscripts-instance_method" title="#noscripts (instance method)">- (Object) <strong>noscripts</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ol-instance_method" title="#ol (instance method)">- (Object) <strong>ol</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ols-instance_method" title="#ols (instance method)">- (Object) <strong>ols</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#optgroup-instance_method" title="#optgroup (instance method)">- (Object) <strong>optgroup</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#optgroups-instance_method" title="#optgroups (instance method)">- (Object) <strong>optgroups</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#option-instance_method" title="#option (instance method)">- (Object) <strong>option</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#options-instance_method" title="#options (instance method)">- (Object) <strong>options</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#output-instance_method" title="#output (instance method)">- (Object) <strong>output</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#outputs-instance_method" title="#outputs (instance method)">- (Object) <strong>outputs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#p-instance_method" title="#p (instance method)">- (Object) <strong>p</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#param-instance_method" title="#param (instance method)">- (Object) <strong>param</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#params-instance_method" title="#params (instance method)">- (Object) <strong>params</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pre-instance_method" title="#pre (instance method)">- (Object) <strong>pre</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pres-instance_method" title="#pres (instance method)">- (Object) <strong>pres</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#progress-instance_method" title="#progress (instance method)">- (Object) <strong>progress</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ps-instance_method" title="#ps (instance method)">- (Object) <strong>ps</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#q-instance_method" title="#q (instance method)">- (Object) <strong>q</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#qs-instance_method" title="#qs (instance method)">- (Object) <strong>qs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#radio-instance_method" title="#radio (instance method)">- (Object) <strong>radio</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#radios-instance_method" title="#radios (instance method)">- (Object) <strong>radios</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rp-instance_method" title="#rp (instance method)">- (Object) <strong>rp</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rps-instance_method" title="#rps (instance method)">- (Object) <strong>rps</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rt-instance_method" title="#rt (instance method)">- (Object) <strong>rt</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rts-instance_method" title="#rts (instance method)">- (Object) <strong>rts</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ruby-instance_method" title="#ruby (instance method)">- (Object) <strong>ruby</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rubys-instance_method" title="#rubys (instance method)">- (Object) <strong>rubys</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#samp-instance_method" title="#samp (instance method)">- (Object) <strong>samp</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#samps-instance_method" title="#samps (instance method)">- (Object) <strong>samps</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#section-instance_method" title="#section (instance method)">- (Object) <strong>section</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sections-instance_method" title="#sections (instance method)">- (Object) <strong>sections</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#select-instance_method" title="#select (instance method)">- (Object) <strong>select</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#select_list-instance_method" title="#select_list (instance method)">- (Object) <strong>select_list</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#select_lists-instance_method" title="#select_lists (instance method)">- (Object) <strong>select_lists</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#selects-instance_method" title="#selects (instance method)">- (Object) <strong>selects</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#small-instance_method" title="#small (instance method)">- (Object) <strong>small</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#smalls-instance_method" title="#smalls (instance method)">- (Object) <strong>smalls</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#source-instance_method" title="#source (instance method)">- (Object) <strong>source</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sources-instance_method" title="#sources (instance method)">- (Object) <strong>sources</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#span-instance_method" title="#span (instance method)">- (Object) <strong>span</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#spans-instance_method" title="#spans (instance method)">- (Object) <strong>spans</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#strong-instance_method" title="#strong (instance method)">- (Object) <strong>strong</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#strongs-instance_method" title="#strongs (instance method)">- (Object) <strong>strongs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#style-instance_method" title="#style (instance method)">- (Object) <strong>style</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#styles-instance_method" title="#styles (instance method)">- (Object) <strong>styles</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sub-instance_method" title="#sub (instance method)">- (Object) <strong>sub</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#subs-instance_method" title="#subs (instance method)">- (Object) <strong>subs</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sup-instance_method" title="#sup (instance method)">- (Object) <strong>sup</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sups-instance_method" title="#sups (instance method)">- (Object) <strong>sups</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#table-instance_method" title="#table (instance method)">- (Object) <strong>table</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tables-instance_method" title="#tables (instance method)">- (Object) <strong>tables</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tbody-instance_method" title="#tbody (instance method)">- (Object) <strong>tbody</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tbodys-instance_method" title="#tbodys (instance method)">- (Object) <strong>tbodys</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#td-instance_method" title="#td (instance method)">- (Object) <strong>td</strong> </a>
+    
+
+    
+      (also: #cell)
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tds-instance_method" title="#tds (instance method)">- (Object) <strong>tds</strong> </a>
+    
+
+    
+      (also: #cells)
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#text_field-instance_method" title="#text_field (instance method)">- (Object) <strong>text_field</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#text_fields-instance_method" title="#text_fields (instance method)">- (Object) <strong>text_fields</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#textarea-instance_method" title="#textarea (instance method)">- (Object) <strong>textarea</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#textareas-instance_method" title="#textareas (instance method)">- (Object) <strong>textareas</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tfoot-instance_method" title="#tfoot (instance method)">- (Object) <strong>tfoot</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tfoots-instance_method" title="#tfoots (instance method)">- (Object) <strong>tfoots</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#th-instance_method" title="#th (instance method)">- (Object) <strong>th</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#thead-instance_method" title="#thead (instance method)">- (Object) <strong>thead</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#theads-instance_method" title="#theads (instance method)">- (Object) <strong>theads</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ths-instance_method" title="#ths (instance method)">- (Object) <strong>ths</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#time-instance_method" title="#time (instance method)">- (Object) <strong>time</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#times-instance_method" title="#times (instance method)">- (Object) <strong>times</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#title-instance_method" title="#title (instance method)">- (Object) <strong>title</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#titles-instance_method" title="#titles (instance method)">- (Object) <strong>titles</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tr-instance_method" title="#tr (instance method)">- (Object) <strong>tr</strong> </a>
+    
+
+    
+      (also: #row)
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#trs-instance_method" title="#trs (instance method)">- (Object) <strong>trs</strong> </a>
+    
+
+    
+      (also: #rows)
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ul-instance_method" title="#ul (instance method)">- (Object) <strong>ul</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uls-instance_method" title="#uls (instance method)">- (Object) <strong>uls</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#unknown-instance_method" title="#unknown (instance method)">- (Object) <strong>unknown</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#unknowns-instance_method" title="#unknowns (instance method)">- (Object) <strong>unknowns</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#var-instance_method" title="#var (instance method)">- (Object) <strong>var</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#vars-instance_method" title="#vars (instance method)">- (Object) <strong>vars</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+  </ul>
+
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <a href="XpathSupport.html" title="Watir::XpathSupport (module)">XpathSupport</a></h3>
+  <p class="inherited"><a href="XpathSupport.html#element_by_xpath-instance_method" title="Watir::XpathSupport#element_by_xpath (method)">#element_by_xpath</a>, <a href="XpathSupport.html#elements_by_xpath-instance_method" title="Watir::XpathSupport#elements_by_xpath (method)">#elements_by_xpath</a></p>
+
+  
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="add-class_method">
+  
+    + (<tt>Object</tt>) <strong>add</strong>(method, &amp;blk) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+10
+11
+12</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/container.rb', line 10</span>
+
+<span class='kw'>def</span> <span class='id add'>add</span><span class='lparen'>(</span><span class='id method'>method</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id blk'>blk</span><span class='rparen'>)</span>
+  <span class='id define_method'>define_method</span><span class='lparen'>(</span><span class='id method'>method</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id blk'>blk</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="a-instance_method">
+  
+    - (<tt>Object</tt>) <strong>a</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+138</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 138</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:a</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="abbr-instance_method">
+  
+    - (<tt>Object</tt>) <strong>abbr</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+875</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 875</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:abbr</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="abbrs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>abbrs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+877</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 877</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:abbrs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="address-instance_method">
+  
+    - (<tt>Object</tt>) <strong>address</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+595</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 595</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:address</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="area-instance_method">
+  
+    - (<tt>Object</tt>) <strong>area</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+128</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 128</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:area</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="areas-instance_method">
+  
+    - (<tt>Object</tt>) <strong>areas</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+130</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 130</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:areas</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="article-instance_method">
+  
+    - (<tt>Object</tt>) <strong>article</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+915</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 915</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:article</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="articles-instance_method">
+  
+    - (<tt>Object</tt>) <strong>articles</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+917</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 917</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:articles</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="as-instance_method">
+  
+    - (<tt>Object</tt>) <strong>as</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+140</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 140</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:as</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="aside-instance_method">
+  
+    - (<tt>Object</tt>) <strong>aside</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+805</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 805</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:aside</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="asides-instance_method">
+  
+    - (<tt>Object</tt>) <strong>asides</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+807</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 807</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:asides</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="b-instance_method">
+  
+    - (<tt>Object</tt>) <strong>b</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+725</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 725</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:b</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="base-instance_method">
+  
+    - (<tt>Object</tt>) <strong>base</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+482</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 482</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:base</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="bases-instance_method">
+  
+    - (<tt>Object</tt>) <strong>bases</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+484</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 484</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:bases</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="bdo-instance_method">
+  
+    - (<tt>Object</tt>) <strong>bdo</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+645</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 645</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:bdo</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="bdos-instance_method">
+  
+    - (<tt>Object</tt>) <strong>bdos</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+647</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 647</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:bdos</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="blockquote-instance_method">
+  
+    - (<tt>Object</tt>) <strong>blockquote</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+310</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 310</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:blockquote</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="blockquotes-instance_method">
+  
+    - (<tt>Object</tt>) <strong>blockquotes</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+312</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 312</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:blockquotes</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="body-instance_method">
+  
+    - (<tt>Object</tt>) <strong>body</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+372</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 372</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:body</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="bodys-instance_method">
+  
+    - (<tt>Object</tt>) <strong>bodys</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+374</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 374</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:bodys</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="br-instance_method">
+  
+    - (<tt>Object</tt>) <strong>br</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+442</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 442</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:br</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="brs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>brs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+444</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 444</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:brs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="bs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>bs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+727</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 727</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:bs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="button-instance_method">
+  
+    - (<tt>Object</tt>) <strong>button</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+98</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 98</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:button</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="buttons-instance_method">
+  
+    - (<tt>Object</tt>) <strong>buttons</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+100</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 100</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:buttons</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="canvas-instance_method">
+  
+    - (<tt>Object</tt>) <strong>canvas</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+432</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 432</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:canvas</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="caption-instance_method">
+  
+    - (<tt>Object</tt>) <strong>caption</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+342</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 342</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:caption</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="captions-instance_method">
+  
+    - (<tt>Object</tt>) <strong>captions</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+344</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 344</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:captions</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="checkbox-instance_method">
+  
+    - (<tt>Object</tt>) <strong>checkbox</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/checkbox.rb', line 6</span>
+
+<span class='id container_method'>container_method</span>  <span class='symbol'>:checkbox</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="checkboxes-instance_method">
+  
+    - (<tt>Object</tt>) <strong>checkboxes</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/checkbox.rb', line 7</span>
+
+<span class='id collection_method'>collection_method</span> <span class='symbol'>:checkboxes</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="cite-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cite</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+705</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 705</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:cite</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="cites-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cites</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+707</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 707</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:cites</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="code-instance_method">
+  
+    - (<tt>Object</tt>) <strong>code</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+755</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 755</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:code</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="codes-instance_method">
+  
+    - (<tt>Object</tt>) <strong>codes</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+757</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 757</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:codes</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="col-instance_method">
+  
+    - (<tt>Object</tt>) <strong>col</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+845</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 845</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:col</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="colgroup-instance_method">
+  
+    - (<tt>Object</tt>) <strong>colgroup</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+178</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 178</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:colgroup</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="colgroups-instance_method">
+  
+    - (<tt>Object</tt>) <strong>colgroups</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+180</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 180</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:colgroups</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="cols-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cols</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+847</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 847</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:cols</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="datalist-instance_method">
+  
+    - (<tt>Object</tt>) <strong>datalist</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 48</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:datalist</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="datalists-instance_method">
+  
+    - (<tt>Object</tt>) <strong>datalists</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+50</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 50</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:datalists</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="dd-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dd</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+585</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 585</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:dd</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="dds-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dds</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+587</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 587</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:dds</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="del-instance_method">
+  
+    - (<tt>Object</tt>) <strong>del</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+925</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 925</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:del</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="dels-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dels</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+927</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 927</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:dels</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="details-instance_method">
+  
+    - (<tt>Object</tt>) <strong>details</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+158</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 158</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:details</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="dfn-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dfn</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+695</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 695</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:dfn</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="dfns-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dfns</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+697</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 697</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:dfns</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="div-instance_method">
+  
+    - (<tt>Object</tt>) <strong>div</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+402</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 402</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:div</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="divs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>divs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+404</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 404</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:divs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="dl-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dl</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+68</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 68</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:dl</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="dls-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dls</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 70</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:dls</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="dt-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dt</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+835</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 835</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:dt</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="dts-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dts</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+837</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 837</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:dts</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="em-instance_method">
+  
+    - (<tt>Object</tt>) <strong>em</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+935</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 935</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:em</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="embed-instance_method">
+  
+    - (<tt>Object</tt>) <strong>embed</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+188</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 188</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:embed</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="embeds-instance_method">
+  
+    - (<tt>Object</tt>) <strong>embeds</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+190</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 190</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:embeds</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ems-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ems</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+937</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 937</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:ems</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="fieldset-instance_method">
+  
+    - (<tt>Object</tt>) <strong>fieldset</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+532</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 532</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:fieldset</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="fieldsets-instance_method">
+  
+    - (<tt>Object</tt>) <strong>fieldsets</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+534</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 534</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:fieldsets</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="figure-instance_method">
+  
+    - (<tt>Object</tt>) <strong>figure</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+745</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 745</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:figure</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="figures-instance_method">
+  
+    - (<tt>Object</tt>) <strong>figures</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+747</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 747</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:figures</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="file_field-instance_method">
+  
+    - (<tt>Object</tt>) <strong>file_field</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/file_field.rb', line 6</span>
+
+<span class='id container_method'>container_method</span>  <span class='symbol'>:file_field</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="file_fields-instance_method">
+  
+    - (<tt>Object</tt>) <strong>file_fields</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/file_field.rb', line 7</span>
+
+<span class='id collection_method'>collection_method</span> <span class='symbol'>:file_fields</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="footer-instance_method">
+  
+    - (<tt>Object</tt>) <strong>footer</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+895</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 895</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:footer</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="footers-instance_method">
+  
+    - (<tt>Object</tt>) <strong>footers</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+897</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 897</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:footers</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="form-instance_method">
+  
+    - (<tt>Object</tt>) <strong>form</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+240</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 240</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:form</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="forms-instance_method">
+  
+    - (<tt>Object</tt>) <strong>forms</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+242</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 242</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:forms</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h1-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h1</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+472</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 472</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:h1</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h1s-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h1s</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+474</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 474</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:h1s</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h2-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h2</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/headings.rb', line 13</span>
+
+<span class='id container_method'>container_method</span>   <span class='symbol'>:h2</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h2s-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h2s</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/headings.rb', line 14</span>
+
+<span class='id collection_method'>collection_method</span>  <span class='symbol'>:h2s</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h3-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h3</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/headings.rb', line 21</span>
+
+<span class='id container_method'>container_method</span>   <span class='symbol'>:h3</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h3s-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h3s</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/headings.rb', line 22</span>
+
+<span class='id collection_method'>collection_method</span>  <span class='symbol'>:h3s</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h4-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h4</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/headings.rb', line 29</span>
+
+<span class='id container_method'>container_method</span>   <span class='symbol'>:h4</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h4s-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h4s</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/headings.rb', line 30</span>
+
+<span class='id collection_method'>collection_method</span>  <span class='symbol'>:h4s</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h5-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h5</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/headings.rb', line 37</span>
+
+<span class='id container_method'>container_method</span>   <span class='symbol'>:h5</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h5s-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h5s</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/headings.rb', line 38</span>
+
+<span class='id collection_method'>collection_method</span>  <span class='symbol'>:h5s</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h6-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h6</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+45</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/headings.rb', line 45</span>
+
+<span class='id container_method'>container_method</span>   <span class='symbol'>:h6</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="h6s-instance_method">
+  
+    - (<tt>Object</tt>) <strong>h6s</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+46</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/headings.rb', line 46</span>
+
+<span class='id collection_method'>collection_method</span>  <span class='symbol'>:h6s</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="head-instance_method">
+  
+    - (<tt>Object</tt>) <strong>head</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+382</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 382</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:head</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="header-instance_method">
+  
+    - (<tt>Object</tt>) <strong>header</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+785</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 785</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:header</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="headers-instance_method">
+  
+    - (<tt>Object</tt>) <strong>headers</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+787</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 787</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="heads-instance_method">
+  
+    - (<tt>Object</tt>) <strong>heads</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+384</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 384</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:heads</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="hgroup-instance_method">
+  
+    - (<tt>Object</tt>) <strong>hgroup</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+795</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 795</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:hgroup</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="hgroups-instance_method">
+  
+    - (<tt>Object</tt>) <strong>hgroups</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+797</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 797</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:hgroups</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="hidden-instance_method">
+  
+    - (<tt>Object</tt>) <strong>hidden</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/hidden.rb', line 6</span>
+
+<span class='id container_method'>container_method</span>  <span class='symbol'>:hidden</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="hiddens-instance_method">
+  
+    - (<tt>Object</tt>) <strong>hiddens</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/hidden.rb', line 7</span>
+
+<span class='id collection_method'>collection_method</span> <span class='symbol'>:hiddens</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="hr-instance_method">
+  
+    - (<tt>Object</tt>) <strong>hr</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 88</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:hr</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="hrs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>hrs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 90</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:hrs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="html-instance_method">
+  
+    - (<tt>Object</tt>) <strong>html</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+210</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 210</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:html</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="htmls-instance_method">
+  
+    - (<tt>Object</tt>) <strong>htmls</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+212</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 212</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:htmls</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="i-instance_method">
+  
+    - (<tt>Object</tt>) <strong>i</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+855</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 855</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:i</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="iframe-instance_method">
+  
+    - (<tt>Object</tt>) <strong>iframe</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='frame-instance_method'>frame</span></span>
+    </span>
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+260</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 260</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:iframe</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="iframes-instance_method">
+  
+    - (<tt>Object</tt>) <strong>iframes</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='frames-instance_method'>frames</span></span>
+    </span>
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+262</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 262</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:iframes</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="image-instance_method">
+  
+    - (<tt>Object</tt>) <strong>image</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+270</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 270</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:image</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="images-instance_method">
+  
+    - (<tt>Object</tt>) <strong>images</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+272</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 272</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:images</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="input-instance_method">
+  
+    - (<tt>Object</tt>) <strong>input</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 28</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:input</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="inputs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>inputs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 30</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:inputs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ins-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ins</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+715</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 715</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:ins</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="is-instance_method">
+  
+    - (<tt>Object</tt>) <strong>is</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+857</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 857</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:is</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="kbd-instance_method">
+  
+    - (<tt>Object</tt>) <strong>kbd</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+685</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 685</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:kbd</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="kbds-instance_method">
+  
+    - (<tt>Object</tt>) <strong>kbds</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+687</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 687</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:kbds</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="keygen-instance_method">
+  
+    - (<tt>Object</tt>) <strong>keygen</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+522</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 522</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:keygen</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="keygens-instance_method">
+  
+    - (<tt>Object</tt>) <strong>keygens</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+524</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 524</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:keygens</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="label-instance_method">
+  
+    - (<tt>Object</tt>) <strong>label</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+512</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 512</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:label</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="labels-instance_method">
+  
+    - (<tt>Object</tt>) <strong>labels</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+514</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 514</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:labels</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="legend-instance_method">
+  
+    - (<tt>Object</tt>) <strong>legend</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+230</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 230</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:legend</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="legends-instance_method">
+  
+    - (<tt>Object</tt>) <strong>legends</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+232</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 232</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:legends</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="li-instance_method">
+  
+    - (<tt>Object</tt>) <strong>li</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 78</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:li</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="link-instance_method">
+  
+    - (<tt>Object</tt>) <strong>link</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/link.rb', line 7</span>
+
+<span class='id container_method'>container_method</span>  <span class='symbol'>:link</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="links-instance_method">
+  
+    - (<tt>Object</tt>) <strong>links</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/link.rb', line 8</span>
+
+<span class='id collection_method'>collection_method</span> <span class='symbol'>:links</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="lis-instance_method">
+  
+    - (<tt>Object</tt>) <strong>lis</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 80</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:lis</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="map-instance_method">
+  
+    - (<tt>Object</tt>) <strong>map</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+392</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 392</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:map</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="maps-instance_method">
+  
+    - (<tt>Object</tt>) <strong>maps</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+394</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 394</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:maps</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="mark-instance_method">
+  
+    - (<tt>Object</tt>) <strong>mark</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+675</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 675</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:mark</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="marks-instance_method">
+  
+    - (<tt>Object</tt>) <strong>marks</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+677</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 677</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:marks</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="meta-instance_method">
+  
+    - (<tt>Object</tt>) <strong>meta</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 18</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:meta</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="metas-instance_method">
+  
+    - (<tt>Object</tt>) <strong>metas</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 20</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:metas</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="meter-instance_method">
+  
+    - (<tt>Object</tt>) <strong>meter</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+462</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 462</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:meter</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="meters-instance_method">
+  
+    - (<tt>Object</tt>) <strong>meters</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+464</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 464</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:meters</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="nav-instance_method">
+  
+    - (<tt>Object</tt>) <strong>nav</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+605</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 605</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:nav</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="navs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>navs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+607</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 607</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:navs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="noscript-instance_method">
+  
+    - (<tt>Object</tt>) <strong>noscript</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+735</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 735</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:noscript</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="noscripts-instance_method">
+  
+    - (<tt>Object</tt>) <strong>noscripts</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+737</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 737</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:noscripts</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ol-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ol</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+562</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 562</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:ol</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ols-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ols</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+564</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 564</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:ols</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="optgroup-instance_method">
+  
+    - (<tt>Object</tt>) <strong>optgroup</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+168</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 168</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:optgroup</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="optgroups-instance_method">
+  
+    - (<tt>Object</tt>) <strong>optgroups</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+170</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 170</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:optgroups</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="option-instance_method">
+  
+    - (<tt>Object</tt>) <strong>option</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+220</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 220</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:option</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="options-instance_method">
+  
+    - (<tt>Object</tt>) <strong>options</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+222</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 222</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:options</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="output-instance_method">
+  
+    - (<tt>Object</tt>) <strong>output</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+332</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 332</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:output</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="outputs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>outputs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+334</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 334</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:outputs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="p-instance_method">
+  
+    - (<tt>Object</tt>) <strong>p</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+362</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 362</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:p</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="param-instance_method">
+  
+    - (<tt>Object</tt>) <strong>param</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+250</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 250</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:param</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="params-instance_method">
+  
+    - (<tt>Object</tt>) <strong>params</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+252</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 252</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:params</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="pre-instance_method">
+  
+    - (<tt>Object</tt>) <strong>pre</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+148</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 148</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:pre</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="pres-instance_method">
+  
+    - (<tt>Object</tt>) <strong>pres</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+150</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 150</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:pres</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="progress-instance_method">
+  
+    - (<tt>Object</tt>) <strong>progress</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+280</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 280</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:progress</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ps-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ps</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+364</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 364</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:ps</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="q-instance_method">
+  
+    - (<tt>Object</tt>) <strong>q</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+765</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 765</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:q</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="qs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>qs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+767</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 767</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:qs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="radio-instance_method">
+  
+    - (<tt>Object</tt>) <strong>radio</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/radio.rb', line 6</span>
+
+<span class='id container_method'>container_method</span>  <span class='symbol'>:radio</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="radios-instance_method">
+  
+    - (<tt>Object</tt>) <strong>radios</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/radio.rb', line 7</span>
+
+<span class='id collection_method'>collection_method</span> <span class='symbol'>:radios</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="rp-instance_method">
+  
+    - (<tt>Object</tt>) <strong>rp</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+655</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 655</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:rp</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="rps-instance_method">
+  
+    - (<tt>Object</tt>) <strong>rps</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+657</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 657</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:rps</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="rt-instance_method">
+  
+    - (<tt>Object</tt>) <strong>rt</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+665</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 665</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:rt</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="rts-instance_method">
+  
+    - (<tt>Object</tt>) <strong>rts</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+667</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 667</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:rts</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ruby-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ruby</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+905</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 905</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:ruby</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="rubys-instance_method">
+  
+    - (<tt>Object</tt>) <strong>rubys</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+907</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 907</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:rubys</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="samp-instance_method">
+  
+    - (<tt>Object</tt>) <strong>samp</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+815</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 815</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:samp</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="samps-instance_method">
+  
+    - (<tt>Object</tt>) <strong>samps</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+817</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 817</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:samps</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="section-instance_method">
+  
+    - (<tt>Object</tt>) <strong>section</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+825</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 825</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:section</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sections-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sections</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+827</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 827</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:sections</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="select-instance_method">
+  
+    - (<tt>Object</tt>) <strong>select</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+502</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 502</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:select</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="select_list-instance_method">
+  
+    - (<tt>Object</tt>) <strong>select_list</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 6</span>
+
+<span class='id container_method'>container_method</span>  <span class='symbol'>:select_list</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="select_lists-instance_method">
+  
+    - (<tt>Object</tt>) <strong>select_lists</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 7</span>
+
+<span class='id collection_method'>collection_method</span> <span class='symbol'>:select_lists</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="selects-instance_method">
+  
+    - (<tt>Object</tt>) <strong>selects</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+504</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 504</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:selects</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="small-instance_method">
+  
+    - (<tt>Object</tt>) <strong>small</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+885</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 885</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:small</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="smalls-instance_method">
+  
+    - (<tt>Object</tt>) <strong>smalls</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+887</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 887</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:smalls</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="source-instance_method">
+  
+    - (<tt>Object</tt>) <strong>source</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+542</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 542</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:source</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sources-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sources</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+544</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 544</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:sources</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="span-instance_method">
+  
+    - (<tt>Object</tt>) <strong>span</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+552</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 552</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:span</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="spans-instance_method">
+  
+    - (<tt>Object</tt>) <strong>spans</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+554</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 554</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:spans</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="strong-instance_method">
+  
+    - (<tt>Object</tt>) <strong>strong</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+775</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 775</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:strong</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="strongs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>strongs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+777</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 777</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:strongs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="style-instance_method">
+  
+    - (<tt>Object</tt>) <strong>style</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+320</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 320</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:style</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="styles-instance_method">
+  
+    - (<tt>Object</tt>) <strong>styles</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+322</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 322</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:styles</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sub-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sub</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+625</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 625</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:sub</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="subs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>subs</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+627</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 627</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:subs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sup-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sup</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+635</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 635</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:sup</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sups-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sups</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+637</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 637</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:sups</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="table-instance_method">
+  
+    - (<tt>Object</tt>) <strong>table</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+352</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 352</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:table</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tables-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tables</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+354</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 354</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:tables</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tbody-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tbody</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+118</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 118</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:tbody</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tbodys-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tbodys</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 120</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:tbodys</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="td-instance_method">
+  
+    - (<tt>Object</tt>) <strong>td</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='cell-instance_method'>cell</span></span>
+    </span>
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+422</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 422</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:td</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tds-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tds</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='cells-instance_method'>cells</span></span>
+    </span>
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+424</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 424</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:tds</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="text_field-instance_method">
+  
+    - (<tt>Object</tt>) <strong>text_field</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/text_field.rb', line 8</span>
+
+<span class='id container_method'>container_method</span>  <span class='symbol'>:text_field</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="text_fields-instance_method">
+  
+    - (<tt>Object</tt>) <strong>text_fields</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/text_field.rb', line 9</span>
+
+<span class='id collection_method'>collection_method</span> <span class='symbol'>:text_fields</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="textarea-instance_method">
+  
+    - (<tt>Object</tt>) <strong>textarea</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+412</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 412</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:textarea</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="textareas-instance_method">
+  
+    - (<tt>Object</tt>) <strong>textareas</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+414</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 414</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:textareas</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tfoot-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tfoot</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+615</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 615</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:tfoot</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tfoots-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tfoots</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+617</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 617</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:tfoots</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="th-instance_method">
+  
+    - (<tt>Object</tt>) <strong>th</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 38</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:th</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="thead-instance_method">
+  
+    - (<tt>Object</tt>) <strong>thead</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+575</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 575</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:thead</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="theads-instance_method">
+  
+    - (<tt>Object</tt>) <strong>theads</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+577</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 577</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:theads</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ths-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ths</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 40</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:ths</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="time-instance_method">
+  
+    - (<tt>Object</tt>) <strong>time</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+290</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 290</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:time</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="times-instance_method">
+  
+    - (<tt>Object</tt>) <strong>times</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+292</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 292</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:times</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="title-instance_method">
+  
+    - (<tt>Object</tt>) <strong>title</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+452</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 452</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:title</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="titles-instance_method">
+  
+    - (<tt>Object</tt>) <strong>titles</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+454</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 454</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:titles</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tr-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tr</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='row-instance_method'>row</span></span>
+    </span>
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+108</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 108</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:tr</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="trs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>trs</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='rows-instance_method'>rows</span></span>
+    </span>
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+110</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 110</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:trs</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ul-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ul</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+300</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 300</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:ul</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="uls-instance_method">
+  
+    - (<tt>Object</tt>) <strong>uls</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+302</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 302</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:uls</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="unknown-instance_method">
+  
+    - (<tt>Object</tt>) <strong>unknown</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+492</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 492</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:unknown</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="unknowns-instance_method">
+  
+    - (<tt>Object</tt>) <strong>unknowns</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+494</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 494</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:unknowns</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="var-instance_method">
+  
+    - (<tt>Object</tt>) <strong>var</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+865</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 865</span>
+
+<span class='id container_method'>container_method</span><span class='lparen'>(</span><span class='symbol'>:var</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="vars-instance_method">
+  
+    - (<tt>Object</tt>) <strong>vars</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+867</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/generated.rb', line 867</span>
+
+<span class='id collection_method'>collection_method</span><span class='lparen'>(</span><span class='symbol'>:vars</span><span class='rparen'>)</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Tue Jan 26 23:23:10 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
+  0.5.3 (ruby-1.9.1).
+</div>
+
+  </body>
+</html>
