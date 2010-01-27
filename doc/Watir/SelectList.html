@@ -139,7 +139,10 @@
   
 
   
-    <span class="summary_desc"></span>
+    <span class="summary_desc">
+Clear all selected options.
+
+</span>
   
 </li>
 
@@ -159,7 +162,10 @@
   
 
   
-    <span class="summary_desc"></span>
+    <span class="summary_desc">
+Returns true if this element is enabled.
+
+</span>
   
 </li>
 
@@ -167,7 +173,33 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#includes%3F-instance_method" title="#includes? (instance method)">- (Boolean) <strong>includes?</strong>(str_or_rx) </a>
+      <a href="#include%3F-instance_method" title="#include? (instance method)">- (Boolean) <strong>include?</strong>(str_or_rx) </a>
+    
+
+    
+      (also: #includes?)
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns true if the select list has one or more options where text or label
+matches the given value.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#select-instance_method" title="#select (instance method)">- (String) <strong>select</strong>(str_or_rx) </a>
     
 
     
@@ -179,7 +211,10 @@
   
 
   
-    <span class="summary_desc"></span>
+    <span class="summary_desc">
+Select the option(s) whose text or label matches the given string.
+
+</span>
   
 </li>
 
@@ -187,7 +222,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#select-instance_method" title="#select (instance method)">- (Object) <strong>select</strong>(str_or_rx) </a>
+      <a href="#select_value-instance_method" title="#select_value (instance method)">- (String) <strong>select_value</strong>(str_or_rx) </a>
     
 
     
@@ -199,27 +234,10 @@
   
 
   
-    <span class="summary_desc"></span>
-  
-</li>
+    <span class="summary_desc">
+Selects the option(s) whose value attribute matches the given string.
 
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#select_value-instance_method" title="#select_value (instance method)">- (Object) <strong>select_value</strong>(str_or_rx) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"></span>
+</span>
   
 </li>
 
@@ -239,7 +257,11 @@
   
 
   
-    <span class="summary_desc"></span>
+    <span class="summary_desc">
+Returns true if any of the selected options&#8217; text or label match the
+given value.
+
+</span>
   
 </li>
 
@@ -247,7 +269,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#selected_options-instance_method" title="#selected_options (instance method)">- (Object) <strong>selected_options</strong> </a>
+      <a href="#selected_options-instance_method" title="#selected_options (instance method)">- (Array&lt;String&gt;) <strong>selected_options</strong> </a>
     
 
     
@@ -259,7 +281,11 @@
   
 
   
-    <span class="summary_desc"></span>
+    <span class="summary_desc">
+An array of strings representing the text value of the currently selected
+options.
+
+</span>
   
 </li>
 
@@ -267,7 +293,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#value-instance_method" title="#value (instance method)">- (Object) <strong>value</strong> </a>
+      <a href="#value-instance_method" title="#value (instance method)">- (String<sup>?</sup>) <strong>value</strong> </a>
     
 
     
@@ -279,7 +305,10 @@
   
 
   
-    <span class="summary_desc"></span>
+    <span class="summary_desc">
+Returns the value of the first selected option in the select list.
+
+</span>
   
 </li>
 
@@ -358,7 +387,10 @@
   
 </p><div class="docstring">
   <div class="discussion">
-    
+    <p>
+Clear all selected options
+</p>
+
 
   </div>
 </div>
@@ -368,7 +400,7 @@
   
     <li>
       
-        <span class='type'>(<tt><a href="Exception/Error.html" title="Watir::Exception::Error (class)">Exception::Error</a></tt>)</span>
+        <span class='type'>(<tt><a href="Exception/Error.html" title="Watir::Exception::Error (class)">Error</a></tt>)</span>
       
       
       
@@ -383,23 +415,23 @@
       <pre class="lines">
 
 
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre>
+23
+24
+25
+26
+27
+28
+29
+30
+31</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 23</span>
 
 <span class='kw'>def</span> <span class='id clear'>clear</span>
   <span class='id assert_exists'>assert_exists</span>
 
-  <span class='id raise'>raise</span> <span class='const'>Exception</span><span class='op'>::</span><span class='const'>Error</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>you can only clear multi-selects</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id multiple?'>multiple?</span>
+  <span class='id raise'>raise</span> <span class='const'>Error</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>you can only clear multi-selects</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id multiple?'>multiple?</span>
 
   <span class='id options'>options</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id o'>o</span><span class='op'>|</span>
     <span class='id o'>o</span><span class='period'>.</span><span class='id toggle'>toggle</span> <span class='kw'>if</span> <span class='id o'>o</span><span class='period'>.</span><span class='id selected?'>selected?</span>
@@ -419,7 +451,10 @@
   
 </p><div class="docstring">
   <div class="discussion">
-    
+    <p>
+Returns true if this element is enabled
+</p>
+
 
   </div>
 </div>
@@ -444,12 +479,12 @@
       <pre class="lines">
 
 
-9
-10
-11</pre>
+15
+16
+17</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 9</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 15</span>
 
 <span class='kw'>def</span> <span class='id enabled?'>enabled?</span>
   <span class='op'>!</span><span class='id disabled?'>disabled?</span>
@@ -460,20 +495,49 @@
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="includes?-instance_method">
+  <p class="signature " id="include?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>includes?</strong>(str_or_rx) 
+    - (<tt>Boolean</tt>) <strong>include?</strong>(str_or_rx) 
   
 
   
+    <span class="aliases">Also known as:
+    <span class="names"><span id='includes?-instance_method'>includes?</span></span>
+    </span>
+  
 </p><div class="docstring">
   <div class="discussion">
-    
+    <p>
+Returns true if the select list has one or more options where text or label
+matches the given value.
+</p>
+
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="../String.html" title="String (class)">String</a></tt>, <tt>Regexp</tt>)</span>
+      
+      
+        <span class='name'>value</span>
+      
+      
+      
+        &mdash;
+        
+A value.
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
 <ul class="return">
   
     <li>
@@ -493,17 +557,19 @@
       <pre class="lines">
 
 
-23
-24
-25
-26</pre>
+40
+41
+42
+43
+44</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 40</span>
 
-<span class='kw'>def</span> <span class='id includes?'>includes?</span><span class='lparen'>(</span><span class='id str_or_rx'>str_or_rx</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id include?'>include?</span><span class='lparen'>(</span><span class='id str_or_rx'>str_or_rx</span><span class='rparen'>)</span>
   <span class='id assert_exists'>assert_exists</span>
-  <span class='id options'>options</span><span class='period'>.</span><span class='id any?'>any?</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id e'>e</span><span class='op'>|</span> <span class='id str_or_rx'>str_or_rx</span> <span class='op'>===</span> <span class='id e'>e</span><span class='period'>.</span><span class='id text'>text</span> <span class='rbrace'>}</span>
+  <span class='comment'># TODO: optimize similar to selected?
+</span>  <span class='id options'>options</span><span class='period'>.</span><span class='id any?'>any?</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id e'>e</span><span class='op'>|</span> <span class='id str_or_rx'>str_or_rx</span> <span class='op'>===</span> <span class='id e'>e</span><span class='period'>.</span><span class='id text'>text</span> <span class='rbrace'>}</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -513,33 +579,98 @@
       <div class="method_details ">
   <p class="signature " id="select-instance_method">
   
-    - (<tt>Object</tt>) <strong>select</strong>(str_or_rx) 
+    - (<tt><a href="../String.html" title="String (class)">String</a></tt>) <strong>select</strong>(str_or_rx) 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Select the option(s) whose text or label matches the given string. If this
+is a multi-select and several options match the value given, all will be
+selected.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="../String.html" title="String (class)">String</a></tt>, <tt>Regexp</tt>)</span>
+      
+      
+        <span class='name'>value</span>
+      
+      
+      
+        &mdash;
+        
+A value.
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="../String.html" title="String (class)">String</a></tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+The text of the option selected. If multiple options match, returns the
+first match.
+
+
+      
+    </li>
+  
+</ul>
+<h3>Raises:</h3>
+<ul class="raise">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="Exception/NoValueFoundException.html" title="Watir::Exception::NoValueFoundException (class)">Watir::Exception::NoValueFoundException</a></tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+if the value does not exist.
+
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-28
-29
-30
-31
-32
-33
-34</pre>
+56
+57
+58</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 28</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='id select'>select</span><span class='lparen'>(</span><span class='id str_or_rx'>str_or_rx</span><span class='rparen'>)</span>
-  <span class='kw'>if</span> <span class='id multiple?'>multiple?</span>
-    <span class='id select_all_by'>select_all_by</span> <span class='symbol'>:text</span><span class='comma'>,</span> <span class='id str_or_rx'>str_or_rx</span>
-  <span class='kw'>else</span>
-    <span class='id select_first_by'>select_first_by</span> <span class='symbol'>:text</span><span class='comma'>,</span> <span class='id str_or_rx'>str_or_rx</span>
-  <span class='kw'>end</span>
+    <span class='id select_by'>select_by</span> <span class='symbol'>:text</span><span class='comma'>,</span> <span class='id str_or_rx'>str_or_rx</span><span class='comma'>,</span> <span class='id multiple?'>multiple?</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -549,33 +680,102 @@
       <div class="method_details ">
   <p class="signature " id="select_value-instance_method">
   
-    - (<tt>Object</tt>) <strong>select_value</strong>(str_or_rx) 
+    - (<tt><a href="../String.html" title="String (class)">String</a></tt>) <strong>select_value</strong>(str_or_rx) 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Selects the option(s) whose value attribute matches the given string.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="../String.html" title="String (class)">String</a></tt>, <tt>Regexp</tt>)</span>
+      
+      
+        <span class='name'>value</span>
+      
+      
+      
+        &mdash;
+        
+A value.
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="../String.html" title="String (class)">String</a></tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+The option selected. If multiple options match, returns the first match
+
+
+      
+    </li>
+  
+</ul>
+<h3>Raises:</h3>
+<ul class="raise">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="Exception/NoValueFoundException.html" title="Watir::Exception::NoValueFoundException (class)">Watir::Exception::NoValueFoundException</a></tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+if the value does not exist.
+
+
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li>+select+</li>
+    
+  </ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-36
-37
-38
-39
-40
-41
-42</pre>
+70
+71
+72</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 70</span>
 
 <span class='kw'>def</span> <span class='id select_value'>select_value</span><span class='lparen'>(</span><span class='id str_or_rx'>str_or_rx</span><span class='rparen'>)</span>
-  <span class='kw'>if</span> <span class='id multiple?'>multiple?</span>
-    <span class='id select_all_by'>select_all_by</span> <span class='symbol'>:value</span><span class='comma'>,</span> <span class='id str_or_rx'>str_or_rx</span>
-  <span class='kw'>else</span>
-    <span class='id select_first_by'>select_first_by</span> <span class='symbol'>:value</span><span class='comma'>,</span> <span class='id str_or_rx'>str_or_rx</span>
-  <span class='kw'>end</span>
+  <span class='id select_by'>select_by</span> <span class='symbol'>:value</span><span class='comma'>,</span> <span class='id str_or_rx'>str_or_rx</span><span class='comma'>,</span> <span class='id multiple?'>multiple?</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -591,12 +791,37 @@
   
 </p><div class="docstring">
   <div class="discussion">
-    
+    <p>
+Returns true if any of the selected options&#8217; text or label match the
+given value.
+</p>
+
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="../String.html" title="String (class)">String</a></tt>, <tt>Regexp</tt>)</span>
+      
+      
+        <span class='name'>value</span>
+      
+      
+      
+        &mdash;
+        
+A value.
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
 <ul class="return">
   
     <li>
@@ -609,6 +834,25 @@
     </li>
   
 </ul>
+<h3>Raises:</h3>
+<ul class="raise">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="Exception/UnknownObjectException.html" title="Watir::Exception::UnknownObjectException (class)">Watir::Exception::UnknownObjectException</a></tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+if the value does not exist.
+
+
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -616,23 +860,23 @@
       <pre class="lines">
 
 
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53</pre>
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 82</span>
 
 <span class='kw'>def</span> <span class='id selected?'>selected?</span><span class='lparen'>(</span><span class='id str_or_rx'>str_or_rx</span><span class='rparen'>)</span>
   <span class='id assert_exists'>assert_exists</span>
-  <span class='id matches'>matches</span> <span class='op'>=</span> <span class='id options'>options</span><span class='period'>.</span><span class='id select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id e'>e</span><span class='op'>|</span> <span class='id str_or_rx'>str_or_rx</span> <span class='op'>===</span> <span class='id e'>e</span><span class='period'>.</span><span class='id text'>text</span> <span class='rbrace'>}</span>
+  <span class='id matches'>matches</span> <span class='op'>=</span> <span class='ivar'>@element</span><span class='period'>.</span><span class='id find_elements'>find_elements</span><span class='lparen'>(</span><span class='symbol'>:tag_name</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>option</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id e'>e</span><span class='op'>|</span> <span class='id str_or_rx'>str_or_rx</span> <span class='op'>===</span> <span class='id e'>e</span><span class='period'>.</span><span class='id text'>text</span> <span class='op'>||</span> <span class='id str_or_rx'>str_or_rx</span> <span class='op'>===</span> <span class='id e'>e</span><span class='period'>.</span><span class='id attribute'>attribute</span><span class='lparen'>(</span><span class='symbol'>:label</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
 
   <span class='kw'>if</span> <span class='id matches'>matches</span><span class='period'>.</span><span class='id empty?'>empty?</span>
     <span class='id raise'>raise</span> <span class='const'>UnknownObjectException</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unable to locate option matching </span><span class='embexpr_beg'>#{</span><span class='id str_or_rx'>str_or_rx</span><span class='period'>.</span><span class='id inspect'>inspect</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
@@ -648,23 +892,55 @@
       <div class="method_details ">
   <p class="signature " id="selected_options-instance_method">
   
-    - (<tt>Object</tt>) <strong>selected_options</strong> 
+    - (<tt>Array&lt;<a href="../String.html" title="String (class)">String</a>&gt;</tt>) <strong>selected_options</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+An array of strings representing the text value of the currently selected
+options.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;<a href="../String.html" title="String (class)">String</a>&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+An array of strings representing the text value of the currently selected
+options.
+
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-62
-63
-64
-65</pre>
+112
+113
+114
+115</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 62</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id selected_options'>selected_options</span>
   <span class='id assert_exists'>assert_exists</span>
@@ -678,25 +954,50 @@
       <div class="method_details ">
   <p class="signature " id="value-instance_method">
   
-    - (<tt>Object</tt>) <strong>value</strong> 
+    - (<tt><a href="../String.html" title="String (class)">String</a></tt><sup>?</sup>) <strong>value</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of the first selected option in the select list. Returns
+nil if no option is selected.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="../String.html" title="String (class)">String</a></tt>, <tt>nil</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-55
-56
-57
-58
-59
-60</pre>
+100
+101
+102
+103
+104
+105</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 55</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/select_list.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='id value'>value</span>
   <span class='id o'>o</span> <span class='op'>=</span> <span class='id options'>options</span><span class='period'>.</span><span class='id find'>find</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id e'>e</span><span class='op'>|</span> <span class='id e'>e</span><span class='period'>.</span><span class='id selected?'>selected?</span> <span class='rbrace'>}</span>
@@ -714,7 +1015,7 @@
 </div>
     
     <div id="footer">
-  Generated on Wed Jan 27 01:15:40 2010 by 
+  Generated on Wed Jan 27 16:18:22 2010 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
   0.5.3 (ruby-1.9.1).
 </div>

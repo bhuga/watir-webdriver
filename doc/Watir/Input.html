@@ -804,7 +804,7 @@ not sure about this.
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#type-instance_method" title="#type (instance method)">- (String) <strong>type</strong> </a>
+      <a href="#type-instance_method" title="#type (instance method)">- (String, String) <strong>type</strong> </a>
     
 
     
@@ -816,7 +816,11 @@ not sure about this.
   
 
   
-    <span class="summary_desc"></span>
+    <span class="summary_desc">
+Return the type attribute of the element, or &#8216;text&#8217; if the
+attribute is invalid.
+
+</span>
   
 </li>
 
@@ -2344,13 +2348,13 @@ not sure about this.
       <pre class="lines">
 
 
-37
-38
-39
-40</pre>
+44
+45
+46
+47</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/input.rb', line 37</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/input.rb', line 44</span>
 
 <span class='kw'>def</span> <span class='id to_button'>to_button</span>
   <span class='id assert_exists'>assert_exists</span>
@@ -2390,13 +2394,13 @@ subclasses
       <pre class="lines">
 
 
-27
-28
-29
-30</pre>
+34
+35
+36
+37</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/input.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/input.rb', line 34</span>
 
 <span class='kw'>def</span> <span class='id to_checkbox'>to_checkbox</span>
   <span class='id assert_exists'>assert_exists</span>
@@ -2420,13 +2424,13 @@ subclasses
       <pre class="lines">
 
 
-32
-33
-34
-35</pre>
+39
+40
+41
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/input.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/input.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='id to_radio'>to_radio</span>
   <span class='id assert_exists'>assert_exists</span>
@@ -2450,13 +2454,13 @@ subclasses
       <pre class="lines">
 
 
-42
-43
-44
-45</pre>
+49
+50
+51
+52</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/input.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/input.rb', line 49</span>
 
 <span class='kw'>def</span> <span class='id to_select_list'>to_select_list</span>
   <span class='id assert_exists'>assert_exists</span>
@@ -2470,19 +2474,32 @@ subclasses
       <div class="method_details ">
   <p class="signature " id="type-instance_method">
   
-    - (<tt><a href="../String.html" title="String (class)">String</a></tt>) <strong>type</strong> 
+    - (<tt><a href="../String.html" title="String (class)">String</a></tt>, <tt><a href="../String.html" title="String (class)">String</a></tt>) <strong>type</strong> 
   
 
   
 </p><div class="docstring">
   <div class="discussion">
-    
+    <p>
+Return the type attribute of the element, or &#8216;text&#8217; if the
+attribute is invalid. TODO: discuss.
+</p>
+
 
   </div>
 </div>
 <div class="tags">
   <h3>Returns:</h3>
 <ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="../String.html" title="String (class)">String</a></tt>)</span>
+      
+      
+      
+      
+    </li>
   
     <li>
       
@@ -2501,17 +2518,17 @@ subclasses
       <pre class="lines">
 
 
-11
-12
-13
-14
-15
-16
-17
-18</pre>
+18
+19
+20
+21
+22
+23
+24
+25</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/input.rb', line 11</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/elements/input.rb', line 18</span>
 
 <span class='kw'>def</span> <span class='id type'>type</span>
   <span class='id assert_exists'>assert_exists</span>
@@ -2756,7 +2773,7 @@ subclasses
 </div>
     
     <div id="footer">
-  Generated on Wed Jan 27 01:15:00 2010 by 
+  Generated on Wed Jan 27 16:17:30 2010 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
   0.5.3 (ruby-1.9.1).
 </div>

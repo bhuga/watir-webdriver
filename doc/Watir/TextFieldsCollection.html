@@ -89,32 +89,6 @@
   
   
 
-  <h2>Instance Method Summary</h2>
-
-  <ul class="summary">
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#elements-instance_method" title="#elements (instance method)">- (Object) <strong>elements</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"></span>
-  
-</li>
-
-    
-  </ul>
-
   
   
   
@@ -131,52 +105,10 @@
 </div>
 
 
-  <div id="instance_method_details" class="method_details_list">
-    <h2>Instance Method Details</h2>
-    
-    
-      <div class="method_details first">
-  <p class="signature first" id="elements-instance_method">
-  
-    - (<tt>Object</tt>) <strong>elements</strong> 
-  
-
-  
-</p><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-4
-5
-6
-7
-8
-9
-10</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/text_fields_collection.rb', line 4</span>
-
-<span class='kw'>def</span> <span class='id elements'>elements</span>
-  <span class='ivar'>@elements</span> <span class='op'>||=</span> <span class='const'>TextFieldLocator</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span>
-    <span class='ivar'>@parent</span><span class='period'>.</span><span class='id wd'>wd</span><span class='comma'>,</span>
-    <span class='ivar'>@element_class</span><span class='period'>.</span><span class='id default_selector'>default_selector</span><span class='comma'>,</span>
-    <span class='ivar'>@element_class</span><span class='period'>.</span><span class='id attribute_list'>attribute_list</span>
-  <span class='rparen'>)</span><span class='period'>.</span><span class='id locate_all'>locate_all</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-  </div>
-
 </div>
     
     <div id="footer">
-  Generated on Wed Jan 27 01:15:39 2010 by 
+  Generated on Wed Jan 27 16:18:21 2010 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
   0.5.3 (ruby-1.9.1).
 </div>

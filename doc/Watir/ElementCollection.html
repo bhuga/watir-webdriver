@@ -116,7 +116,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#each-instance_method" title="#each (instance method)">- (Object) <strong>each</strong>(&amp;blk) </a>
+      <a href="#each-instance_method" title="#each (instance method)">- (Object) <strong>each</strong>(&amp;blk) {|element| ... }</a>
     
 
     
@@ -136,7 +136,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#elements-instance_method" title="#elements (instance method)">- (Object) <strong>elements</strong> </a>
+      <a href="#first-instance_method" title="#first (instance method)">- (Watir::BaseElement) <strong>first</strong> </a>
     
 
     
@@ -148,27 +148,10 @@
   
 
   
-    <span class="summary_desc"></span>
-  
-</li>
+    <span class="summary_desc">
+First element of this collection.
 
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#first-instance_method" title="#first (instance method)">- (Object) <strong>first</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"></span>
+</span>
   
 </li>
 
@@ -201,7 +184,7 @@ A new instance of ElementCollection.
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#last-instance_method" title="#last (instance method)">- (Object) <strong>last</strong> </a>
+      <a href="#last-instance_method" title="#last (instance method)">- (Watir::BaseElement) <strong>last</strong> </a>
     
 
     
@@ -213,7 +196,10 @@ A new instance of ElementCollection.
   
 
   
-    <span class="summary_desc"></span>
+    <span class="summary_desc">
+Last element of the collection.
+
+</span>
   
 </li>
 
@@ -221,7 +207,7 @@ A new instance of ElementCollection.
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#length-instance_method" title="#length (instance method)">- (Object) <strong>length</strong> </a>
+      <a href="#length-instance_method" title="#length (instance method)">- (Fixnum) <strong>length</strong> </a>
     
 
     
@@ -235,7 +221,10 @@ A new instance of ElementCollection.
   
 
   
-    <span class="summary_desc"></span>
+    <span class="summary_desc">
+The number of elements in this collection.
+
+</span>
   
 </li>
 
@@ -243,7 +232,7 @@ A new instance of ElementCollection.
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#to_a-instance_method" title="#to_a (instance method)">- (Object) <strong>to_a</strong> </a>
+      <a href="#to_a-instance_method" title="#to_a (instance method)">- (Array&lt;Watir::BaseElement&gt;) <strong>to_a</strong> </a>
     
 
     
@@ -255,7 +244,10 @@ A new instance of ElementCollection.
   
 
   
-    <span class="summary_desc"></span>
+    <span class="summary_desc">
+This collection as an Array.
+
+</span>
   
 </li>
 
@@ -324,12 +316,12 @@ A new instance of ElementCollection
       <pre class="lines">
 
 
-19
-20
-21</pre>
+39
+40
+41</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='op'>[]</span><span class='lparen'>(</span><span class='id idx'>idx</span><span class='rparen'>)</span>
   <span class='id to_a'>to_a</span><span class='lbracket'>[</span><span class='id idx'>idx</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='ivar'>@element_class</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@parent</span><span class='comma'>,</span> <span class='symbol'>:index</span><span class='comma'>,</span> <span class='id idx'>idx</span><span class='rparen'>)</span>
@@ -342,135 +334,40 @@ A new instance of ElementCollection
       <div class="method_details ">
   <p class="signature " id="each-instance_method">
   
-    - (<tt>Object</tt>) <strong>each</strong>(&amp;blk) 
+    - (<tt>Object</tt>) <strong>each</strong>(&amp;blk) {|element| ... }
   
 
   
-</p><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-10
-11
-12</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 10</span>
-
-<span class='kw'>def</span> <span class='id each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id blk'>blk</span><span class='rparen'>)</span>
-  <span class='id to_a'>to_a</span><span class='period'>.</span><span class='id each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id blk'>blk</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
+</p><div class="docstring">
+  <div class="discussion">
     
-      <div class="method_details ">
-  <p class="signature " id="elements-instance_method">
-  
-    - (<tt>Object</tt>) <strong>elements</strong> 
-  
 
-  
-</p><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-36
-37
-38
-39
-40
-41
-42</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 36</span>
-
-<span class='kw'>def</span> <span class='id elements'>elements</span>
-  <span class='ivar'>@elements</span> <span class='op'>||=</span> <span class='const'>ElementLocator</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span>
-    <span class='ivar'>@parent</span><span class='period'>.</span><span class='id wd'>wd</span><span class='comma'>,</span>
-    <span class='ivar'>@element_class</span><span class='period'>.</span><span class='id default_selector'>default_selector</span><span class='comma'>,</span>
-    <span class='ivar'>@element_class</span><span class='period'>.</span><span class='id attribute_list'>attribute_list</span>
-  <span class='rparen'>)</span><span class='period'>.</span><span class='id locate_all'>locate_all</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
+  </div>
 </div>
-    
-      <div class="method_details ">
-  <p class="signature " id="first-instance_method">
+<div class="tags">
+  <h3>Yield Parameters:</h3>
+<ul class="yieldparam">
   
-    - (<tt>Object</tt>) <strong>first</strong> 
-  
-
-  
-</p><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-23
-24
-25</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 23</span>
-
-<span class='kw'>def</span> <span class='id first'>first</span>
-  <span class='id to_a'>to_a</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='ivar'>@element_class</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@parent</span><span class='comma'>,</span> <span class='symbol'>:index</span><span class='comma'>,</span> <span class='int'>0</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <p class="signature " id="last-instance_method">
-  
-    - (<tt>Object</tt>) <strong>last</strong> 
-  
-
-  
-</p><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
+    <li>
+      
+        <span class='type'>(<tt><a href="BaseElement.html" title="Watir::BaseElement (class)">Watir::BaseElement</a></tt>)</span>
+      
+      
+        <span class='name'>element</span>
+      
+      
+      
+        &mdash;
+        
+Iterate through the elements in this collection.
 
 
-27
-28
-29</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 27</span>
+      
+    </li>
+  
+</ul>
 
-<span class='kw'>def</span> <span class='id last'>last</span>
-  <span class='id to_a'>to_a</span><span class='lbracket'>[</span><span class='op'>-</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='ivar'>@element_class</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@parent</span><span class='comma'>,</span> <span class='symbol'>:index</span><span class='comma'>,</span> <span class='op'>-</span><span class='int'>1</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <p class="signature " id="length-instance_method">
-  
-    - (<tt>Object</tt>) <strong>length</strong> 
-  
-
-  
-    <span class="aliases">Also known as:
-    <span class="names"><span id='size-instance_method'>size</span></span>
-    </span>
-  
-</p><table class="source_code">
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
@@ -483,8 +380,186 @@ A new instance of ElementCollection
     <td>
       <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 14</span>
 
+<span class='kw'>def</span> <span class='id each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id blk'>blk</span><span class='rparen'>)</span>
+  <span class='id to_a'>to_a</span><span class='period'>.</span><span class='id each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id blk'>blk</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="first-instance_method">
+  
+    - (<tt><a href="BaseElement.html" title="Watir::BaseElement (class)">Watir::BaseElement</a></tt>) <strong>first</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+First element of this collection
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="BaseElement.html" title="Watir::BaseElement (class)">Watir::BaseElement</a></tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+Returns an instance of a Watir::BaseElement subclass
+
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+49
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 49</span>
+
+<span class='kw'>def</span> <span class='id first'>first</span>
+  <span class='id to_a'>to_a</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='ivar'>@element_class</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@parent</span><span class='comma'>,</span> <span class='symbol'>:index</span><span class='comma'>,</span> <span class='int'>0</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="last-instance_method">
+  
+    - (<tt><a href="BaseElement.html" title="Watir::BaseElement (class)">Watir::BaseElement</a></tt>) <strong>last</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Last element of the collection
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="BaseElement.html" title="Watir::BaseElement (class)">Watir::BaseElement</a></tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+Returns an instance of a Watir::BaseElement subclass
+
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+59
+60
+61</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 59</span>
+
+<span class='kw'>def</span> <span class='id last'>last</span>
+  <span class='id to_a'>to_a</span><span class='lbracket'>[</span><span class='op'>-</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='ivar'>@element_class</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@parent</span><span class='comma'>,</span> <span class='symbol'>:index</span><span class='comma'>,</span> <span class='op'>-</span><span class='int'>1</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="length-instance_method">
+  
+    - (<tt>Fixnum</tt>) <strong>length</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='size-instance_method'>size</span></span>
+    </span>
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+The number of elements in this collection.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+The number of elements in this collection.
+
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 22</span>
+
 <span class='kw'>def</span> <span class='id length'>length</span>
-  <span class='id to_a'>to_a</span><span class='period'>.</span><span class='id length'>length</span>
+  <span class='id elements'>elements</span><span class='period'>.</span><span class='id length'>length</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -494,23 +569,47 @@ A new instance of ElementCollection
       <div class="method_details ">
   <p class="signature " id="to_a-instance_method">
   
-    - (<tt>Object</tt>) <strong>to_a</strong> 
+    - (<tt>Array&lt;<a href="BaseElement.html" title="Watir::BaseElement (class)">Watir::BaseElement</a>&gt;</tt>) <strong>to_a</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+This collection as an Array
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;<a href="BaseElement.html" title="Watir::BaseElement (class)">Watir::BaseElement</a>&gt;</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-31
-32
-33
-34</pre>
+69
+70
+71
+72</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'lib/watir-webdriver/collections/element_collection.rb', line 69</span>
 
 <span class='kw'>def</span> <span class='id to_a'>to_a</span>
   <span class='comment'># TODO: optimize - lazily @element_class instance
@@ -526,7 +625,7 @@ A new instance of ElementCollection
 </div>
     
     <div id="footer">
-  Generated on Wed Jan 27 01:15:41 2010 by 
+  Generated on Wed Jan 27 16:18:22 2010 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
   0.5.3 (ruby-1.9.1).
 </div>
